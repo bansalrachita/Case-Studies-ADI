@@ -1,0 +1,17 @@
+> abalone<- read.csv("C:\\ADI_sem_2\\K-Means_Clustering_Algorithm\\abalone_new.csv")
+> abaloneNew <- abalone
+> abaloneNew$Sex <- NULL
+> View(abaloneNew)
+> results <- kmeans(abaloneNew, 4)
+> results$withinss
+> results$size
+> results$cluster
+> results$size
+> results <- kmeans(abaloneNew, 4)
+> results$size
+> results$withinss
+> results$totss
+> plot(abalone[c("Length","Shell.weight")], col = results$cluster)
+> plot(abalone[c("Length","Shell.weight","Rings")], col = results$cluster)
+> plot(abalone[c("Length","Diameter",Shell.weight","Rings")], col = results$cluster)
+
